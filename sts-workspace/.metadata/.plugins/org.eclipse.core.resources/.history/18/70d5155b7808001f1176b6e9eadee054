@@ -1,0 +1,20 @@
+package com.ihub.www.model;
+
+
+@Entity
+@Table(name="employees")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Employee 
+{
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
+	
+	@Column
+	private String firstName;
+	
+	@Column
+	private String lastName;
+}
